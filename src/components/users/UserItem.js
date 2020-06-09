@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 export class UserItem extends Component {
-    state = {
-        id: 'id',
-        login: 'mojombo',
-        avatar_url: '#',
-        html_url: '#'
-    };
 
     render() {
         //the const below is destructuring
@@ -14,9 +8,9 @@ export class UserItem extends Component {
         This means that I am able to 'pull' the properties
         from the object chosen.
         */
-        const {login, avatar_url, html_url} = this.state;
+        const {login, avatar_url, html_url} = this.props.user;
         return (
-            <div className='card text-centre'>
+            <div className='card text-center'>
                 <img 
                     src={avatar_url} 
                     alt='avatar'
