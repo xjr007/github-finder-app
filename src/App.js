@@ -5,7 +5,7 @@ import Users from './components/users/Users';
 import User from './components/users/User';
 import Search from './components/users/Search';
 import About from './components/pages/About';
-
+import Alert from './components/layout/Alert';
 import GithubState from './context/github/GithubState';
 import AlertState from './context/alert/AlertState';
 
@@ -21,11 +21,11 @@ const App = () => {
             <div className="App">
               <Navbar title="Github Finder" icon="fab fa-github" />
               <div className="container">
+                <Alert />
                 <Switch>
                   <Route exact path='/' render={props => (
                     <Fragment>
                       <Search />
-
                       <Users />
                     </Fragment>
                   )} />
