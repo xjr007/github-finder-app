@@ -19,12 +19,12 @@ const Users = () => {
             </div>
         )
     }
-}
+};
 
 const userStyle = {
     dispay: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridGap: '1rem'
-}
+};
 
 export default Users;
